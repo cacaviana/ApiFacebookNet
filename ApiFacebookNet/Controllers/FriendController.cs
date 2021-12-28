@@ -1,4 +1,5 @@
-﻿using ApiFacebook.InfraData.Repository;
+﻿using ApiFacebook.Domain.Entity;
+using ApiFacebook.InfraData.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,8 +17,8 @@ namespace ApiFacebookNet.Controllers
         public ActionResult Index()
         {
 
-            var result = _bd.GetFriends();
-
+                var result = _bd.GetFriends();
+            
             return View(result);
         }
 
@@ -35,11 +36,12 @@ namespace ApiFacebookNet.Controllers
 
         // POST: Friend/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Friend friend)
         {
             try
             {
-                // TODO: Add insert logic here
+
+                _bd.InsertFriend(friend);
 
                 return RedirectToAction("Index");
             }

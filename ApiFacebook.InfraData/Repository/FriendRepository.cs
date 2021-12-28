@@ -29,5 +29,28 @@ namespace ApiFacebook.InfraData.Repository
                 return listFriends;
             }
         }
+
+        public void InsertFriend(Friend friend)
+        {
+            using (IDbConnection cn = Connection)
+
+            {
+
+                cn.Execute("spr_ins_friend",
+                               new
+                               {
+                                   FriendName = friend.FriendName,
+                                   City = friend.City,
+                                   PhoneNumber = friend.PhoneNumber
+
+                               },
+                               commandType: CommandType.StoredProcedure);
+                
+            }
+
+           
+        }
+
+
     }
 }
