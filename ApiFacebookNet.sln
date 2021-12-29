@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 - ApiFacebook.Domain", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 - ApiFacebook.InfraData", "ApiFacebook.InfraData\2 - ApiFacebook.InfraData.csproj", "{454B398D-605A-430B-84E3-D6235B4CF10A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFacebook.Servicos", "ApiFacebook.Servicos\ApiFacebook.Servicos.csproj", "{3442881F-31FA-48B8-A885-6D2FEE0EC3E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFacebook.ConsoleAut", "ApiFacebook.ConsoleAut\ApiFacebook.ConsoleAut.csproj", "{F3A9B34F-1424-463E-BFBF-015624118AAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{454B398D-605A-430B-84E3-D6235B4CF10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{454B398D-605A-430B-84E3-D6235B4CF10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{454B398D-605A-430B-84E3-D6235B4CF10A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3442881F-31FA-48B8-A885-6D2FEE0EC3E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3442881F-31FA-48B8-A885-6D2FEE0EC3E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3442881F-31FA-48B8-A885-6D2FEE0EC3E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3442881F-31FA-48B8-A885-6D2FEE0EC3E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A9B34F-1424-463E-BFBF-015624118AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A9B34F-1424-463E-BFBF-015624118AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A9B34F-1424-463E-BFBF-015624118AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A9B34F-1424-463E-BFBF-015624118AAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
