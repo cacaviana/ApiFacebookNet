@@ -48,8 +48,13 @@
     <Compile Include="Data\Conexao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\FriendRepository.cs" />
+    <Compile Include="Repository\HotmartRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ApiFacebook.ConsoleAut\ApiFacebook.ConsoleAut.csproj">
+      <Project>{F3A9B34F-1424-463E-BFBF-015624118AAE}</Project>
+      <Name>ApiFacebook.ConsoleAut</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ApiFacebook.Domain\1 - ApiFacebook.Domain.csproj">
       <Project>{e3cc23dc-fa53-40d7-a488-0fbf1a1d8a3d}</Project>
       <Name>1 - ApiFacebook.Domain</Name>
