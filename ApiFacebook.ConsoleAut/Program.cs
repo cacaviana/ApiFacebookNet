@@ -36,12 +36,14 @@ namespace ApiFacebook.ConsoleAut
             // Initialization.  
             string responseObj = string.Empty;
 
-            string clientId = "34c73160-127f-417e-b133-275bc0d2c3ad";
-            string clientSecret = "a74779a0-cd27-4896-86af-2940ccabeaf6";
-            string Basic = "Basic MzRjNzMxNjAtMTI3Zi00MTdlLWIxMzMtMjc1YmMwZDJjM2FkOmE3NDc3OWEwLWNkMjctNDg5Ni04NmFmLTI5NDBjY2FiZWFmNg==";
+            string clientId = "";
+            string clientSecret = "";
+            string Basic = "Basic YFkMmQ0ZQ==";
 
-                string URL = "https://api-sec-vlc.hotmart.com/security/oauth/token?grant_type=client_credentials&client_id=34c73160-127f-417e-b133-275bc0d2c3ad&client_secret=a74779a0-cd27-4896-86af-2940ccabeaf6";
-                var request2 = new RestRequest(URL, Method.POST, DataFormat.Json);
+
+            string URL = $"https://api-sec-vlc.hotmart.com/security/oauth/token?grant_type=client_credentials&client_id={clientId}&client_secret={clientSecret}";
+
+            var request2 = new RestRequest(URL, Method.POST, DataFormat.Json);
 
                 request2.AddHeader("Authorization", Basic);
                 request2.AddHeader("Content-Type", "application /json");
@@ -50,6 +52,7 @@ namespace ApiFacebook.ConsoleAut
                 var resposta = clientRest.Post<HotmartToken>(request2);
 
                 var tokenHotmart = JsonConvert.DeserializeObject<HotmartToken>(resposta.Content);
+            var barenToken = tokenHotmart.access_token;
 
             return tokenHotmart;
                 
