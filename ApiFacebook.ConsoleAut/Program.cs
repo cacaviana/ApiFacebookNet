@@ -36,8 +36,8 @@ namespace ApiFacebook.ConsoleAut
             // Initialization.  
             string responseObj = string.Empty;
 
-            string clientId = "";
-            string clientSecret = "";
+            string clientId = "das";
+            string clientSecret = "dsa";
             string Basic = "Basic YFkMmQ0ZQ==";
 
 
